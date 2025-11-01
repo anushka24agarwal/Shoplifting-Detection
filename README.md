@@ -72,3 +72,28 @@ The model is trained as an autoencoder:
 
 ![Anomaly](Images/anomaly.png)
 *Shoplifting Detected*
+
+
+## How to run
+1. Create environment & install dependencies
+   
+  ```
+  python3 -m venv venv
+  source venv/bin/activate
+```
+
+2. Train PoseNet on PoseLift data
+```
+Run each cell of train.ipynb sequentially
+```
+
+3. Visualize anomalies on video
+```
+Run anomaly detection for video1 and video2
+```
+
+## Output Files Generated
+
+- output_anomalies.mp4 :	Video with red alert on anomalous frames
+- anomaly_timestamps.csv	: Frame number, timestamp, reconstruction error
+- posenet.pth :	Trained weights
