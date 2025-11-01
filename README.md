@@ -97,3 +97,6 @@ Run anomaly detection for video1 and video2
 - output_anomalies.mp4 :	Video with red alert on anomalous frames
 - anomaly_timestamps.csv	: Frame number, timestamp, reconstruction error
 - posenet.pth :	Trained weights
+
+## Report
+Access Report here [Shopformer Implementation Report](https://github.com/anushka24agarwal/Shoplifting-Detection/blob/main/Report.pdf)
