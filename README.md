@@ -3,7 +3,7 @@
 Anomaly detection system for shoplifting or unusual human behavior using 2D human pose keypoints.  
 This project is based on:
 
-**PoseLift JSON dataset** – contains human skeleton keypoints per frame (`x, y, confidence`)  
+**[PoseLift JSON dataset](https://github.com/TeCSAR-UNCC/PoseLift)** – contains human skeleton keypoints per frame (`x, y, confidence`)  
 **PoseNet Autoencoder** – trained to reconstruct normal human poses  
 **Anomaly Detection** – uses reconstruction error to flag unusual behavior (possible shoplifting)
 
@@ -63,4 +63,12 @@ The model is trained as an autoencoder:
 
 
 ## 📋 Output
+![Frame-wise Reconstruction Error](Images/frame-error.png)
+*Frame-wise Reconstruction Error*
 
+- Average reconstruction error: 236.9241
+- Highest error: 3783.0017
+- Lowest error: 1.8848
+
+![Anomaly](Images/anomaly.png)
+*Shoplifting Detected*
